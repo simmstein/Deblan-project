@@ -1,1 +1,14 @@
-http://irc.deblan.fr/
+Ce dépôt regroupe plusieurs projets autour de Linux/BSD proposé 
+par les gens de la communauté Deblan (voir http://irc.deblan.fr/ 
+pour nous contaxter).
+
+Pour le moment, les différents projets sont :
+• "conf" = un utilitaire pour partager ses fichiers de configuration
+entre amis,
+• "exos" = un ensemble d'exercices concrets pour vous faire progresser
+dans l'apprentissage de Linux/BSD,
+• "FAQ" = une foire aux questions sur Linux/BSD destinée au site
+http://www.deblan.fr/ ainsi qu'au forum Linux de http://jeuxvideo.com,
+• "questionnaire" = un utilitaire pour orienter les gens dans leur choix
+de distribution (à l'instar de 
+http://www.zegeniestudios.net/ldc/index.php?lang=fr ).
