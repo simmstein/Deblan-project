@@ -1,0 +1,124 @@
+Debian, Ubuntu, OpenSuse, Fedora, Mint, Mandriva, RedHat, Suse, Gentoo, Slackware, Arch,
+ZenWalk, Free Bsd, PCBSD, OpenBSD, LFS, DragonFly, Centos, Windows
+
+( 19:26 @ chris_27 ) avec une page qui explique que le logiciel libre, ça marche très bien 
+                     sous windows et que c'est pas le peine de se faire chier à installer 
+                     linux si c'est juste pour avoir audacity
+
+( 19:30 @ chris_27 ) au passage, il faudrait une page de pub au milieu, où on passe une 
+                     vidéo adéquate
+( 19:30 @ chris_27 ) genre l'install d'openbsd en 3 minutes OU synaptic
+( 19:30 @ chris_27 ) suivant le bonhomme
+
+ 19:33 @ chris_27 ) mais on peut la poser de la façon suivante :
+( 19:33 @ chris_27 ) "Que comptez vous faire avec votre machine ? (cocher les cases)"
+( 19:33 @ chris_27 ) et mettre un logo youtube
+
+
+0 Pour vous, c'est quoi linux ?
+	> Screenshoot
+	tty à aero, en passant pour mac os X
+
+(1 Savez-vous ce qu'est une "distribution Linux" ?
+	Oui
+	Non) -> remplacée par 0 ?
+
+2 Avez-vous déjà réussi à installer un système d'exploitation auparavant ?
+	Oui
+	Non
+
+3 Savez-vous comment "partitionner" un disque dur ?
+	Oui
+	Non, je n'ai aucune idée de ce que "partitionnement" signifie
+	Non, mais je sais ce que"partitionnement" signifie
+
+4 Quel genre d'installateur préférez vous ?
+	Graphique (Pointer et clicker)
+	En mode texte (clavier seulement)
+	Je n'y prête pas d'importance, du moment que c'est facile et que ça marche
+
+5 Comment évalueriez-vous votre niveau de qualification technique en informatique ?
+	Débutant
+	Intermediaire / Avancé
+	Expert
+
+	> mettre un curseur à bouger qui change le décor ambiant en fonction de la position
+
+6 Sur quel genre d'ordinateur allez-vous l'intaller ?
+	Un ordinateur portable (laptop)
+	Un ordinateur de bureau (desktop)
+	PS3
+	Cela peut-être les deux
+
+7 Quel est la fonction première de cet ordinateur ?
+	Desktop / Système personnel
+	Station de travail à la maison/ en entreprise
+	Serveur
+	
+	> mettre des screenshots et demander de cocher
+
+8 (Avez-vous un processeur 64 bits ?
+	Oui
+	Non)
+
+9 (Quel âge à l'ordinateur sur lequel vous allez installer Linux ?
+	Il a plus que juste quelque années
+	Juste quelques années
+	Il est (presque) encore brillant!)
+
+10 Comment évalueriez-vous votre niveau de connaissance de Linux ?
+	Je n'ai jamais utilisé Linux auparavant/ J'ai seulement essayer un petit peu
+	J'utilise Linux depuis un moment maintenant
+	Expérimenté - Je sais parfaitement où je vais
+
+	> remplacer ça par un qcm
+
+11 Quel système de gestion de paquetages préférez-vous?
+	Je préfère le système deb
+	Je préfère le système rpm
+	Je préfère compiler mes propres binaires
+	Je préfère un autre
+	Je ne sais pas/Je n'y prête pas attention
+
+12 Avez-vous besoin que les paquetages de développement soit installés/aisément disponibles ?
+	Oui, aisément disponible
+	Oui, sur le CD
+	Non
+	
+	> A revoir 
+
+13 Quel environement de bureau préférez-vous ?
+	Je préfère KDE
+	Je préfère GNOME
+	Je préfère LXDE
+	Je préfère avoir (aussi) d'autres environements de bureau disponibles
+	Je n'y prête pas attention
+
+	> Screenshoots
+
+14 Avez-vous besoin d'un accès facile à beaucoup de logiciels prêts à l'emploi ?
+	Oui, s'il vous plaît
+	Non merci / Je n'y prête pas attention
+
+	> a revoir
+
+15 Veuillez sélectionner ce qui s'adapte le mieux à vous
+	Je préfère utiliser des logiciels parfaitement stables, complètement testés
+	Je veux avoir les tout derniers logiciels mais néanmoins grandement stables
+	ça ne me gêne pas de tester des choses nouvelles, excitantes mais expérimentales
+
+	> a revoir
+
+16 Pourquoi êtes-vous ici ?
+	Étude 
+	Curiosité
+	Windows sucks
+	Cousin polonais
+
+Est-ce que la distro Linux doit être gratuite ?
+	Oui
+	Non
+
+Voulez-vous inclure les Live CDs dans les résultats ?
+	Oui
+	Non
