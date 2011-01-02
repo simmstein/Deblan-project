@@ -1,0 +1,37 @@
+Voila en gros comment le système de configuration pourrait fonctionner :
+	- On a des utilisateurs
+	- On a une série de logiciels
+
+
+Chaque utilisateur peut poster des configuration de logiciels.
+Une configuration est versionnée (genre git ou svn) pour en connaître l'évolution.
+
+   logiciel <-- fichier de configuration X --> utilisateur
+                fichier de conf. X-1
+                fichier de conf. X-2
+
+Un utilisateur peut :
+	- chercher des configurations liées à un logiciel
+	- chercher des configurations liées à un utilisateur
+	- chercher des configurations liées à un logiciel et un utilisateur
+
+L'utilisateur peyt installer une configuration sur sa machine, ça implique :
+	- gérer correctement la mise en place de la nouvelle configuration :
+		- en fonction du sysème
+		- version du logiciel
+	- préserver au mieux l'intégriter de son système
+	- possibilité de retour en arrière
+
+Un utilisateur pourrait déposer un commentaire sur les configurations qu'il souhaite.
+
+L'application doit être sécurisée :
+	- transactions sécurisées
+	- outils de download/upload chiadés
+
+Pour l'instant, j'imagine :
+	- un client cli
+	- un sites web
+
+	Ces deux outils permettent :
+		- l'ajour d'une conf
+		- la recherche/installation d'une conf
