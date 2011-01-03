@@ -1,8 +1,29 @@
 Système de partage de configuration liée à des utilisateurs et des logiciels
 
-dargor> comment on organise ceci ? simple pastebin ou plus poussé sous la forme d'un "réseau social" de geeks où on partagerait ses confs et goûts en matière de logiciels libres ? ça serait bien de prévoir un client en ligne de commande permettant d'envoyer directement un fichier sur son compte :)
+<dargor> 
+- comment on organise ceci ? simple pastebin ou plus poussé sous la forme d'un 
+"réseau social" de geeks où on partagerait ses confs et goûts en matière de 
+logiciels libres ? 
+- ça serait bien de prévoir un client en ligne de commande permettant d'envoyer 
+directement un fichier sur son compte :)
+</dargor>
 
-simon> ----------------
+
+<chris>
+- Je verrai plus un genre de réseau social.
+- Les serveurs aussi ont le droit d'avoir des confs partagées (genre .zshrc 
+et .vimrc). Donc +1 au client en ligne de commande.
+
+Question :
+- On centralise tout sur un unique serveur ou on fait plutôt du p2p ?
+
+Demande :
+- Il est important de pouvoir obtenir facilement le diff entre plusieurs confs
+(de préférence sans avoir à récupérer lesdites confs en local)
+</chris>
+
+
+<simon> 
 Voila en gros comment le système de configuration pourrait fonctionner :
 	- On a des utilisateurs
 	- On a une série de logiciels
@@ -20,7 +41,7 @@ Un utilisateur peut :
 	- chercher des configurations liées à un utilisateur
 	- chercher des configurations liées à un logiciel et un utilisateur
 
-L'utilisateur peyt installer une configuration sur sa machine, ça implique :
+L'utilisateur peut installer une configuration sur sa machine, ça implique :
 	- gérer correctement la mise en place de la nouvelle configuration :
 		- en fonction du sysème
 		- version du logiciel
@@ -35,9 +56,9 @@ L'application doit être sécurisée :
 
 Pour l'instant, j'imagine :
 	- un client cli
-	- un sites web
+	- un site web
 
 	Ces deux outils permettent :
 		- l'ajour d'une conf
 		- la recherche/installation d'une conf
---------------
+</simon>

@@ -1,1 +1,77 @@
-Ensembles d'exerices pour développer son expérience sur un système GNU/Linux
+Ensemble d'exerices pour développer son expérience sur un système GNU/Linux.
+
+
+<chris>
+
+
+Le but est de proposer des exercices pour :
+1.  permettre à l'utilisateur moyen de vérifier ses compétences,
+2a. montrer au novice ce qu'il faut savoir faire pour vivre au
+quotidien sur un système Unix (gestionnaire de paquets, …)
+2b. proposer à l'utilisateur moyen des points sur lesquels il
+pourra progresser.
+
+----
+
+Je prévois trois catégories d'exercices :
+• des exercices simples que tout utilisateur moyen devrait savoir faire,
+• des mises en situation face à un « bogue » qu'il faudra corriger
+(à noter que ça pourrait les solutions à ces exos pourraient fait office
+de section "problèmes courants" dans la FAQ),
+• des exercices plus spécifiques destinés à mettre au défi l'utilisateur
+moyen  curieux.
+
+
+Exemple d'exercices simples :
+• installer un paquet,
+• mettre à jour son système,
+• configurer thunderbird (ou équivalent) pour l'envoi de mails via
+le smtp de son FAI,
+• amusette avec un gestionnaire de fenêtres "non-windows-like",
+• …
+
+
+Exemple de « bogues » :
+• restauration de grub,
+• changer un mot de passe utilisateur,
+• chaos dans la gestion du charset (→ problèmes avec les accents),
+• faire un check disk après un crash,
+• exemple de bogue ubuesque (genre un segfault idiot) mais déjà 
+rapporté et corrigé dans les dépôts (le reflexe d'aller chercher 
+dans les rapports de bogue est important),
+• …
+
+
+Points techniques abordables (auxquels j'ai pensé) :
+• les Makefile,
+• la programmation shell,
+• l'utilisation de git,
+• mise en place d'un serveur web + PHP,
+• mise en place d'un serveur mail,
+• mise en place d'un annuaire ldap.
+
+----
+
+Pour le moment, je n'ai pas d'idées précises sur la bonne façon de fournir
+les énonces, ni sur celle de vérifier les réponses proposées.
+
+Pour les énoncés, j'ai pensé à :
+• une image disque pour machine virtuelle … mais c'est trop volumineux,
+• des scripts pour semer la zizanie à partir d'une distribution de test 
+installée pour cet effet (ça pourait très bien être dans une machine 
+virtuelle d'ailleurs) … mais ça ne se prète bien qu'aux exercices de
+type « bogue ».
+
+Pour la solution, on peut éventuellement estimer, si les exercices sont très
+simples (à comprendre, pas à résoudre ;) ), que c'est à l'utilisateur de 
+décider s'il a réussi ou non. (attention au novice qui n'a aucun repère !)
+
+
+----
+
+Autre(s) question(s) en suspend :
+• où doit-on mettre le repartitionnement et l'installation de sa propre 
+distribution linux ?
+
+
+</chris>
