@@ -27,7 +27,7 @@ NB:
 Pour annuler des changements avant le 2., faire
 $ git checkout <fichier>
 et pour enlever un fichier de la liste des fichiers à commiter, faire
-$ git reset <fichier>
+$ git reset HEAD <fichier>
 
 
 
