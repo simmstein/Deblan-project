@@ -1,0 +1,9 @@
+Je veux rÃ©installer ma distribution Linux ou en installer une autre. Que dois-je faire ?
+
+Si vous n'avez pas mis vos données personnelles sur une partition
+/home à part, il va falloir faire une sauvegarde (et créer une
+partition /home à la réinstallation cette fois).
+Pensez à
+sauvegarder les fichiers de configuration que vous avez modifié (
+/boot/grub/menu.lst, /etc/apt/sources.list, /etc/X11/xorg.conf, ...)
+Si le partitionnement vous convient, gardez-le. Notez que la partition / sera formatée lors de la réinstallation.

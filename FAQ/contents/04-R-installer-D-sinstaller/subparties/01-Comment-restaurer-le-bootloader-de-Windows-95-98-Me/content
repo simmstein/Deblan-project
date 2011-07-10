@@ -1,0 +1,5 @@
+Comment restaurer le bootloader de Windows 95/98/Me ?
+
+Bootez sur un CD ou une disquette de Windows, arrangez vous pour obtenir un invité de commande, puis tapez-y :
+{{{fixmbr}}}
+Rebootez pour tester si cela a fonctionné.

@@ -1,0 +1,30 @@
+Comment restaurer Grub ?
+
+Bootez sur LiveCD de Linux. Notez le numéro de la partition /
+correspondant à la distribution dont vous voulez restaurer le Grub
+(disons que c'est 5). Lancez un terminal super-utilisateur (ou tapez
+"sudo su -" dans un terminal normal) et entrez les commandes suivantes :
+{{{mkdir -pv /mnt/tmp<br />mount /dev/sda5 /mnt/tmp<br />mount --bind /dev /mnt/tmp/dev<br />mount -t proc proc /mnt/tmp/proc<br />chroot /mnt/tmp /bin/bash <br />}}}
+
+*changer le 5 si besoin !
+*sur les vieilles machines, c'est parfois hda au lieu de sda
+
+Un nouveau prompt apparaît.
+{{{grub}}}
+un nouveau prompt apparaît.
+{{{root (hd0,4)<br />setup (hd0)<br />setup (hd0,4)}}}
+le 4 c'est 5-1. Mettez le nombre qui convient.
+Faites enfin autant de ctrl+D qu'il faut pour quitter le terminal et redémarrez pour tester.
+NB
+: si la distribution n'est pas sur le premier disque mais sur le
+deuxième, il faut changer les "sda" en "sdb" et les "hd0" en "hd1". 
+NB2
+: J'utilise deux fois le setup() de grub. Je sais que normalement, une
+fois ça suffit, mais j'aime bien avoir Grub sur le mbr de la partition
+/ car cela peut s'avérer très pratique quand on installe plusieurs
+distributions (et sinon ça ne coûte qu'une commande à taper).
+NB3
+: Si c'est aussi compliqué, c'est pour que ça marche. On peut s'amuser
+à faire sans chroot, mais si les versions de grub sur le liveCD et sur
+le disque dur sont différentes, la situation sera probablement pire
+qu'avant. 

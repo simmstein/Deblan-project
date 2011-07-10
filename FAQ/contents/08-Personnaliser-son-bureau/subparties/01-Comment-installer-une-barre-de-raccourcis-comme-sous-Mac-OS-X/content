@@ -1,0 +1,89 @@
+Comment installer une barre de raccourcis comme sous Mac OS X ? 
+
+Cairo-Dock est ce que communément on appelle maintenant un dock, à
+savoir une sorte de super barre des tâches avec lanceur d'application
+comme le dock sous MacOS ou rocketdock sous windows.
+!!Installation
+De
+nos jour le projet à bien évoluer et est packagé dans la plupart des
+distributions, il suffit donc d'installer le paquet "cairo-dock" via le
+gestionnaire de paquet. Si par malheur le paquet ne se trouve pas dans
+vos dépôt je vous renvoie à la page wiki du site du projet, partie
+installation, [http://www.glx-dock.org/ww_page.php?p=Accueil&lang;=fr|http://www.glx-dock.org/ww_page.php?p=Accueil&lang=fr].<br />Assurez-vous néanmoins d'activer les dépôt adaptés (universe sous ubuntu par exemple).
+!!Lancement
+Une fois installé vous pouvez lancer deux "versions" de Cairo-Dock :
+
+*la version sans OpenGL via la commande "cairo-dock"
+            
+*la version avec OpenGL via la commande "xgl-dock"
+        
+
+Pour
+faire simple la version sans OpenGL est plus simple et ne gère pas la
+transparence entre autre mais ne nécessite pas une carte graphique très
+évolué.
+A contrario la version avec OpenGL est plus "jolie" et gère la transparence mais il vous faut la carte graphique qui va bien.
+Note
+: Pensez à vérifier si le pilotes propriétaire de votre carte graphique
+est installé si vous voulez lancé la version xgl-dock.
+Une fois lancé vous devriez vous retrouver avec le dock en bas de l'écran comme ici: [http://pix.toile-libre.org/upload/original/1274966455.png|http://pix.toile-libre.org/upload/original/1274966455.png]
+avec un petit message (que vous ne voyez pas sur mon screen par ce que
+j'ai cliquez dessus) qui vous fait un petit topo sur l'appli.
+!!Configuration
+Pour configurer le dock c'est très simple, un clic droit quelque part sur le dock puis cairo-dock puis configurer.<br />
+En image : [http://pix.toile-libre.org/upload/original/1274966490.png|http://pix.toile-libre.org/upload/original/1274966490.png].
+    
+Vous vous trouvez ensuite avec le panneau de configuration du dock qui existe sous deux versions également :
+
+*le
+mode simplifié, qui se lance par défaut, où tout est organisé en 4
+onglets: comportement, apparence, plug-ins et thème. Les options sont
+assez explicites pour que ne les décrivent pas plus en détail je pense
+:-) et par ce qu'il y en a trop aussi). [http://pix.toile-libre.org/upload/original/1274966559.png|http://pix.toile-libre.org/upload/original/1274966559.png]
+*le
+mode avancé, il suffit de cliquer sur mode avancé en bas à gauche de la
+fenêtre précédente. On se retrouve alors avec une fenêtre de
+configuration proche de celle de compiz pour ceux qui connaissent). [http://pix.toile-libre.org/upload/original/1274966687.png|http://pix.toile-libre.org/upload/original/1274966687.png]
+
+!!Les lanceurs et sous dock 
+Cairo-Dock
+permet donc de lancer des applications. Pour ajouter un lanceurs il
+suffit de faire un clic droit / ajouter / ajouter un lanceur
+personnalisé.<br />
+Une fois fait, vous aurez cette fenêtre [http://pix.toile-libre.org/upload/original/1274966747.png|http://pix.toile-libre.org/upload/original/1274966747.png].
+Dans
+laquelle vous pourrez choisir le nom du lanceur, la commande qui va
+bien le chemin de l'image que vous souhaitez utilisé et l'option nom du
+conteneur vous permet de choisir si le lanceur sera dans le dock
+principal ou dans un sous dock.
+D'ailleurs comment créer un
+sous dock? me direz-vous. Et bien même combat il suffit d'un clic droit
+/ ajouter / ajouter un sous-dock
+[http://pix.toile-libre.org/upload/original/1274966793.png|http://pix.toile-libre.org/upload/original/1274966793.png].
+Vous pouvez par la suite ajouter autant de lanceur que vous le souhaitez dans ce sous dock.
+!!Les thèmes
+La gestion des thème peut se faire de 2 façons :
+
+*soit via le panneau de configuration, l'onglet "thème"
+            
+*soit clic droit sur le dock / cairo-dock / gestion des thèmes
+            [http://pix.toile-libre.org/upload/original/1274966575.png|http://pix.toile-libre.org/upload/original/1274966575.png].
+
+La
+deuxième solution apporte l'avantage de permettre comme son nom
+l'indique une gestion des thème: installation d'un nouveau thème,
+sauvegarde de l'une vos création.
+Note : il y a deux
+cases décoché par défaut: "utiliser les lanceurs du nouveaux thème" et
+"utiliser le comportement du nouveau thème", veillez à laisser ces
+cases décochez si vous ne voulez pas perdre tous les réglages que vous
+avez apporté au comportement du dock et les lanceurs que vous avez
+choisi. 
+!!Un bug ?
+Cairo-dock est sur
+un fond tout noir, tout moche : tu dois lancé le dock en mode OpenGL
+alors que ta carte graphique ne le supporte pas ou alors tu utilises
+autre choses que gnome, et oui c'est bête mais à la base cairo-dock
+reprend un projet qui s'appelle gnome-dock ça veut tout dire, et le
+rendu peut varier d'une config à une autre suivant le gestionnaire de
+bureau. 

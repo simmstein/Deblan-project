@@ -1,0 +1,41 @@
+La mise en place des rÃ¨gles pour vraiment router les paquets. 
+
+Bien, maintenant que le routage est activé et que toute machine se
+branchant au câble ethernet se voit attribuer une adresse IP, il reste
+à mettre en place les règles de routage.
+Afin
+de rendre ce routage transparent, nous allons utiliser ce qu'on appelle
+le NAT (que je serais bien en peine d'expliquer clairement). En fait,
+c'est assez compliqué mais en pratique il s'agit essentiellement d'une
+commande (oui Shakaan, tu avais raison quand tu parlais d'une commande).
+Avant de voir cette commande, on va commencer par identifier l'interface réseau qui permet l'accès à internet :
+{{{# ifconfig}}}
+Normalement,
+cette interface devrait s'appeler wlan0 (wifi), wmaster0 (wifi), ppp0
+(modem usb) ou encore eth0/eth1 (connexion internet via un autre câble
+ethernet). Ici, on va dire que c'est wlan0.
+Il
+s'agit maintenant de dire que tout ce qu'on reçoit et qui est à
+destination d'internet doit subir les transformations propres au NAT
+avant de partir par l'interface wlan0 :
+{{{# /sbin/iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE}}}
+Il
+reste un dernier détail à régler pour ceux qui ont reglés leur pare-feu
+à l'étape 1) comme indiqué (c'est à dire tout le monde, j'espère). Les
+deux commandes suivantes permette d'authoriser la circulation de
+paquets venant de la machine à l'autre bout du câble ethernet (permière
+commande) ainsi que la circulation des paquets de réponses (deuxième
+commande) :
+{{{# /sbin/iptables -A FORWARD -i eth0 -o wlan0 -j ACCEPT<br /># /sbin/iptables -A FORWARD -i wlan0 -o eth0 -m state --state RELATED,ESTABLISHED -j ACCEPT}}}
+Notez
+qu'on prend soin à n'envoyer à la machine à l'autre bout du câble que
+les messages de réponse, et pas tout ce qui circule dans ce monde de
+brute !
+Notez aussi que la deuxième
+commande tient sur une seule ligne, contrairement à ce que la mise en
+page de JV.com pourrait éventuellement laisser penser.
+Pour
+rendre ces trois nouvelles règles permanentes, ajouter donc les 3
+commandes dans le fichier /etc/rc.local entre la ligne ajoutée à
+l'étape 1) et le "exit 0".
+Voilà, j'espère qu'avec ça vous vous en sortirez.

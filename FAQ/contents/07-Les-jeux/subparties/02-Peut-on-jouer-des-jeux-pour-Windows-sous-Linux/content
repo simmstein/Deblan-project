@@ -1,0 +1,11 @@
+Peut-on jouer Ã  des jeux pour Windows sous Linux ?
+
+Pour les jeux nécessitant Windows, il y a deux solutions. La bonne
+(voir multiboot à la section installation) et la mauvaise (lire la
+suite).
+Il existe un "émulateur" Windows pour Linux du nom de
+wine. Cet émulateur est loin d'être parfait, néanmoins il permet de
+faire marcher un certain nombre de jeux sous Linux. Vous trouvez
+deux-trois trucs sur wine dans ce sujet : [http://www.jeuxvideo.com/forums/1-38-7670826-1-0-1-0-tuto-wine.htm|http://www.jeuxvideo.com/forums/1-38-7670826-1-0-1-0-tuto-wine.htm].
+Pour savoir si un jeu marche avec wine, allez consulter la base de donnée de wine : [http://appdb.winehq.org/|http://appdb.winehq.org/].
+Enfin, sachez qu'il existe un projet dont le but est de simplifier l'utilisation de wine. Il s'agit de playonlinux : [http://doc.ubuntu-fr.org/playonlinux|http://doc.ubuntu-fr.org/playonlinux] (à installer à partir du gestionnaire de paquet, hein !). 

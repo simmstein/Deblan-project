@@ -1,0 +1,19 @@
+Avant-propos
+
+!!Attention !
+Avant toute chose, je tiens à préciser
+que ce thread n'est pas destiné aux débutants, et qu'il fortement
+déconseillé de suivre les instructions qui suivent à moins de :
+
+*avoir une très bonne raison de le faire.
+*avoir des notions de bases en réseau.
+*être conscient que ces manipulations sont dangeureuses. 
+
+Ce
+message est destiné aux personnes disposant de plusieurs machines (PC
+ou console) dont un PC sous linux disposant d'une connexion internet ET
+d'une prise ethernet libre.
+L'objectif est de permettre à
+toute autre machine d'accéder à internet simplement en branchant un
+câble entre cette machine et le PC sous Linux.
+Pour cela, je propose configurer le PC sous linux afin qu'il se comporte comme un routeur/une foobox.

@@ -1,0 +1,10 @@
+Comment mettre en place un multiboot ?
+
+Lorsque vous installer Linux, l'une des dernières étapes consiste à
+installer un « bootloader » (souvent, il s'agit de Grub). Ce petit
+programme vous permet à chaque démarrage de choisir parmi les
+différents systèmes d'exploitations disponibles sur la machine. Voici
+un petit screenshot (pas très sexy :( ) illustrant cela :
+http://yeknan.free.fr/blog/images/ubuntu7.04/grub.jpg
+Si vous voulez mettre en place un multiboot, il suffit donc juste de
+surveiller que cette étape est bien exécutée à l'installation.

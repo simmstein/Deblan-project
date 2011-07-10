@@ -1,0 +1,7 @@
+les imprimantes
+
+Le site suivant répertorie les différentes imprimantes et les drivers à utiliser : [http://www.openprinting.org/printer_list.cgi|http://www.openprinting.org/printer_list.cgi].
+Si
+vous êtes débutant, je vous conseil d'installer CUPS, de
+brancher/allumer votre imprimante et de configurer le tout depuis votre
+navigateur web favori en allant sur cette page : [http://localhost:631|http://localhost:631/].

@@ -1,0 +1,44 @@
+L'activation du routage de paquets
+
+Par défaut, une machine sous Linux est configurée pour ne router
+aucun paquet. Cela signifie que si la machine reçoit un message qui ne
+lui est pas destiné, celui-ci est jeté.
+Dans
+notre cas, une autre machine (ou console de jeu) va vouloir envoyer des
+paquets sur internet en passant par la machine sous Linux. Il faut donc
+activer le routage de paquets.
+Pour cela, il y a plusieurs méthodes.
+Pour activer l'option jusqu'au prochain démarrage de la machine, on peut faire :
+{{{# echo 1 > /proc/sys/net/ipv4/ip_forward}}}
+Pour
+activer l'option de façon permanente après reboot ou relecture du
+fichier de configuration via sysctl (voir le man de sysctl), on peut
+faire :
+{{{# nano /etc/sysctl.conf}}}
+et ajouter la ligne
+{{{net.ipv4.ip_forward=1}}}
+Si il est fréquent que cette ligne soit déjà présente, précédée d'un #. Dans ce cas, il suffit d'enlever le "#".
+Note
+IMPORTANTE : sur les systèmes Debian et derivés (et probablement
+d'autres), il est déconseillé de modifier le fichier /etc/sysctl.conf.
+Au lieu de cela, on peut éditer un autre fichier (souvent vide ou
+inexistant) :
+{{{# nano /etc/sysctl.d/local.conf}}}
+pour ajouter notre ligne
+{{{net.ipv4.ip_forward=1}}}
+Je
+conseille la première solution pour faire des essais. Pour vraiment
+transformer sa machine en routeur, il faut bien évidemment rendre
+l'activation permanente grâce à la deuxième méthode.
+Dorénavant, votre machine va faire circuler les paquets comme elle peut (et souvent elle peut peu, d'où l'étape 3) ci-dessous.
+Seulement,
+la libre circulation n'est pas souhaitable. Je propose donc d'ajouter
+une règle au niveau du pare-feu pour protéger un peu votre réseau :
+{{{# /sbin/iptables -P FORWARD DROP}}}
+Avec
+ça, on bloque complètement le trafic. On vera à l'étape 3) comment
+ajouter une règle (en fait deux) au niveau du pare-feu pour autoriser
+la circulation des paquets "raisonnables".
+Pour rendre cette règle de pare-feu permanente, je vous propose d'éditer le fichier :
+{{{# nano /etc/rc.local}}}
+et d'ajouter la commande précédente avant le "exit 0" marquant la fin du fichier. 

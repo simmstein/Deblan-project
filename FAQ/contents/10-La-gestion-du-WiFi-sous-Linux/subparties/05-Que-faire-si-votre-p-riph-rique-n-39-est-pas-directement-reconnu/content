@@ -1,0 +1,46 @@
+Que faire si votre pÃ©riphÃ©rique n'est pas directement reconnu
+
+Si ce n'est pas le cas, vous faites partie des malchanceux qui
+disposent d'un périphérique n'ayant pas de pilotes libres disponibles
+dans le noyau, ou pire n'ayant pas de pilotes libres tout court !
+Si
+vous êtes dans le premier cas, il est possible qu'un pilote libre ait
+été développé mais n'ait pas encore intégré le noyau (car encore trop
+récent, pas assez stable, ou autre...). Pour vérifier cela, il va
+falloir chercher un peu (Google est votre ami, vous connaissez la
+rengaine... ^^). Pour être plus efficace dans votre recherche, vous
+pouvez vous aider de la commande :
+{{{$ lspci}}}
+qui liste tous vos périphériques pci/pcmcia (à utiliser donc si vous avez une carte wifi pci ou pcmcia), ou encore :
+{{{$ lsusb}}}
+qui liste tous vos périphériques USB (à utiliser si vous utilisez un dongle wifi USB).
+À
+vous de retrouver parmi la liste d'équipements renvoyée, quel est votre
+périphérique wifi (généralement c'est assez explicite), vous
+récupérerez ainsi la référence précise du chipset (la puce) qu'utilise
+votre dongle/carte. Muni de cette référence une petit recherche sur [http://www.google.fr/linux|http://www.google.fr/linux]
+et sur les forums de distributions populaires telles que Ubuntu,
+Gentoo, Archlinux, etc. devrait vous indiquer si un pilote libre existe
+pour votre matériel.<br />Si c'est le cas, le gestionnaire de paquet de
+votre distribution devrait vous permettre de l'installer et votre
+matériel sera alors reconnu (un petit coup de iwconfig pour le vérifier
+^^), si ce n'est pas le cas, il faudra alors se servir du programme
+ndiswrapper pour utiliser le pilote propriétaire de Windows sous Linux.
+<strong>Attention</strong>
+: ndiswrapper n'est pas une bonne solution puisqu'elle consiste à
+utiliser un pilote Windows via une couche d'émulation sous Linux ! En
+conséquence, ça ne fonctionne pas toujours et lorsque ça marche, il
+n'est pas rare que ça marche mal ! Donc avant de vous rabattre sur
+ndiswrapper, cherchez *longuement* à trouver un pilote conçu pour Linux
+!
+L'utilisation de ndiswrapper est bien documentée, généralement son utilisation consiste en :
+
+*Placer le pilote Windows (fichier .inf) dans un répertoire.
+*Se positionner dans ce répertoire et exécuter en root : <br />
+{{{# ndiswrapper -i nom_du_fichier.inf}}}
+
+*Vérifier que le pilote est correctement pris en charge par ndiswrapper : <br />
+{{{# ndiswrapper -l}}}
+
+*Vérifier alors via iwconfig que vous disposez bien d'une interface wifi.
+

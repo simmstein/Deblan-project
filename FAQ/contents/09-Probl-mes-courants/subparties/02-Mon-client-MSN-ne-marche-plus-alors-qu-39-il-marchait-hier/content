@@ -1,0 +1,8 @@
+Mon client MSN ne marche plus alors qu'il marchait hier.
+
+Ceci arrive souvent suite à un changement dans le protocole MSN. La
+solution consiste à mettre son client à jour. Si vous avez une
+distribution « stable » comme la version LTS d'ubuntu ou la version
+stable de Debian, ces mises à jours sont disponibles uniquement dans
+les dépôts de type « backports », qu'il faudra donc cocher dans la
+configuration de votre gestionnaire de paquets.
