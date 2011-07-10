@@ -1,0 +1,20 @@
+Ma connexion internet est anormalement lente.
+
+Le problème peut venir d'une mauvaise gestion de l'ipv6.
+{{{# modprobe -r ipv6}}}
+Si c'est mieux, on peut rendre cela permanent avec la commande :
+{{{# echo "blacklist ipv6" >> /etc/modprobe.d/blacklist.conf}}}
+Notes :
+
+*parfois, le fichier s'appelle juste "blacklist" et non "blacklist.conf".
+*si
+le support pour l'ipv6 est intégrée en dur dans votre noyau, la
+première commande échouera. Il faudra donc tester en modifiant le
+fichier blacklist.conf et en redémarrant la machine.
+*la
+solution est moyennement satisfaisante car elle prive complètement le
+système de l'ipv6 (et l'ipv6 c'est le bien. :-) ). Il serait préférable
+d'identifier plus précisément le problème et d'ajouter une option dans
+le fichier /etc/sysctl.conf pour ne désactiver que les options causant
+le ralentissement.
+

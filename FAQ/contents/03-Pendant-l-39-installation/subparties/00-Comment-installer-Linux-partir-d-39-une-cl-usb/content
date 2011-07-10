@@ -1,0 +1,21 @@
+Comment installer Linux Ã  partir d'une clÃ© usb ?
+
+Il paraît que UNetBootin marche bien : [http://unetbootin.sourceforge.net/|http://unetbootin.sourceforge.net/].
+Si
+vous disposez déjà d'un système Linux et que vous voulez installer une
+Debian via une clé usb (256 Mo ou plus), vous pouvez procéder comme
+suit :
+
+*branchez votre clé, repérer le périphérique
+associé grâce à la commande "dmesg" (souvent, c'est /dev/sdb1) et
+démonter la/les partition(s) de votre clé en cas de montage automatique.
+*téléchargez
+l'iso du cd de netinstall correspondant à la version de Debian que vous
+voulez installer, ainsi que le fichier boot.img.gz (on le trouve à
+partir du site de Debian en suivant ce qui parle de clé usb : [http://ftp.nl.debian.org/debian/dists/stable/main/installer-i386/current/images/hd-media/|http://ftp.nl.debian.org/debian/dists/stable/main/installer-i386/current/images/hd-media/] pour la version stable).
+*Formatez la clé et remplissez la avec ce qu'il faut pour booter grâce à la commande : <br />
+{{{# zcat boot.img.gz > /dev/sdb}}}
+(Attention, remplacez bien /dev/sdb par ce que vous a donné "dmesg" juste avant SANS le chiffre à la fin).
+*montez la clé et copiez l'iso du cd de netinstall à la racine.
+
+Votre clé est maintenant prête, il ne vous reste plus qu'à installer Debian.

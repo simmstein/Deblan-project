@@ -1,0 +1,9 @@
+Peut-on tester une distribution Linux avant de l'installer ?
+
+Plusieurs distributions grand public fournissent une version LiveCD
+permettant de tester sans rien installer sur sa machine. Il suffit
+simplement de graver une image .iso et de laisser le CD/DVD dans le
+lecteur au démarrage pour essayer Linux.
+Pour Ubuntu : [http://doc.ubuntu-fr.org/generalite/live_cd|http://doc.ubuntu-fr.org/generalite/live_cd]
+Pour Mandriva : [http://www.mandriva.com/fr/produit/mandriva-linux-one|http://www.mandriva.com/fr/produit/mandriva-linux-one]
+NB : Les deux LiveCDs cités ci-dessus font aussi office de CDs d'installation.

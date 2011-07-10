@@ -1,0 +1,27 @@
+J'ai un problÃ¨me de son.
+
+L'outil de base pour régler le son est :
+{{{$ alsamixer}}}
+ou sa version graphique alsamixergui.
+S'il
+s'agit d'un problème de volume, essayez d'augmenter les barres "Master"
+et "PCM" dans alsamixer(gui). Souvent, le raccourci clavier pour
+augmenter/diminuer le volume permet d'ajuster seulement une de ces deux
+barres. Réglez l'autre barre en fonction de vos besoins. Je conseille
+de lancer la commande :
+{{{# alsactl store}}}
+pour s'assurer que votre réglage restera même après un redémarrage de la machine.
+Si
+vous n'avez pas de son, regardez si votre sortie son ("Master" et/ou
+"Aux" pour une sortie haut parleur, "HeadPhone" pour des écouteurs) est
+bien activée. Il devrait y avoir un OO en bas de la barre dans
+alsamixer. S'il y a un MM à la place, allez jusqu'à la barre et appuyer
+sur la touche 'M'.
+De même, si vous essayez de faire de
+l'acquisition et que cela ne marche pas, vérifiez les barres "Capture"
+dans alsamixer. On peut demander à alsamixer de n'afficher que les
+barres liées à l'acquisition audio en appuyant sur la touche 'F4'.
+Enfin,
+si alsamixer ne donne rien, c'est que le problème se situe au niveau de
+la gestion de votre carte. Vérifiez qu'elle est bien gérée par alsa (cf
+Section Matériel -> Carte son) et essayez la méthode décrite ici : [http://www.jeuxvideo.com/forums/1-38-7675096-1-0-1-0-ubuntu-que-faire-si-on-n-a-pas-de-son.htm|http://www.jeuxvideo.com/forums/1-38-7675096-1-0-1-0-ubuntu-que-faire-si-on-n-a-pas-de-son.htm].

@@ -1,0 +1,26 @@
+Annexe 1 : Configurer l'adressage de votre interface une fois le WiFi configurÃ©
+
+Une fois votre interface reconnue et votre connexion configurée, il
+ne vous reste plus qu'à régler l'adressage de votre interface. Deux cas
+sont envisageable :
+
+*1- L'adressage dynamique via dhcp (le plus simple)
+*2- L'adressage statique (demandant un peu plus de travail)
+
+1- Selon votre distribution vous disposez soit du client dhcp : dhclient soit dhcpcd.
+Exécutez alors soit :
+{{{# dhclient eth1}}}
+Soit :
+{{{# dhcpcd eth1}}}
+Si cette étape échoue, votre connexion wifi est mal configurée.
+2-
+Pour configurer votre interface, il faut procéder en 3 temps (on
+supposera que l'ip de votre passerelle est 192.168.1.1 et que vous
+souhaitez attribuer l'adresse 192.168.1.10 à votre interface, adaptez à
+votre cas !) :
+Tout d'abord attribuer une adresse à votre interface via l'outil ifconfig :
+{{{# ifconfig eth1 192.168.1.10 netmask 255.255.255.0 broadcast 192.168.1.255 up}}}
+Ensuite configurer la route vers votre passerelle
+{{{# route add default gw 192.168.1.1}}}
+Enfin, veillez à ce que le fichier /etc/resolv.conf contiennent l'adresse de vos DNS. Par exemple :
+{{{nameserver 192.168.1.1 	}}}

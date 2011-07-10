@@ -1,0 +1,26 @@
+VÃ©rification de la nÃ©cessitÃ© d'un firmware
+
+Si vous êtes arrivé jusqu'ici, vous devez disposez d'une interface
+wifi reconnue quel que soit votre matériel. Il ne vous reste plus qu'à
+configurer correctement votre connexion désormais.
+Mais avant
+de détailler cette étape, il se peut qu'un autre problème se pose. En
+effet, certains périphériques wifi nécessite, en plus du pilote (qui
+fonctionne au niveau de l'OS), un firmware (bout de code chargé au
+niveau du périphérique) souvent propriétaire (donc non intégré au
+noyau) pour fonctionner.
+Si c'est le cas de votre matériel,
+le noyau devrait vous l'indiquer lors qu chargement du module via un
+message du type : « firmware_error : firmware bla_bla_bla.bin is
+missing in /usr/lib/firmware/ ». Pour voir les messages de votre noyau,
+vous pouvez utiliser la commande :
+{{{$ dmesg}}}
+Si
+vous êtes dans ce cas, vous pouvez effectuer une recherche sur Google
+et les forums sus-citésafin de savoir où se procurer le firmware
+nécessaire (généralement vous pouvez le télécharger via votre
+gestionnaire de paquet).
+Une fois le firmware en place
+(généralement dans /usr/lib/firmware mais ce n'est pas une vérité
+générale !) votre noyau ne devrait plus crier lors du chargement du
+pilote. Vous pouvez alors passer à l'étape de configuration. 
