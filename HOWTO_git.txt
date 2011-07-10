@@ -1,0 +1,39 @@
+Mise en place :
+1. créer un compte sur github
+2. créer (si nécessaire) une paire de clés ssh avec
+$ ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ""
+3. uploader la clé sur github (dans les paramètres du compte)
+
+
+Pour récupérer le projet :
+1. se placer dans le dossier où on stocke ses projets (~/src par exemple)
+2. lancer la commande
+$ git clone git@github.com:simmstein/Deblan-project
+
+
+Modifications en local :
+1. modifier certains fichiers,
+2. indiquer les fichiers dont vous voulez conserver les modifications avec
+$ git add <fichier1> [<fichier2> ...]
+3. valider les changements avec
+$ git commit -m "message court"
+ou 
+$ git commit
++ message long dans votre éditeur de texte préféré.
+
+NB:
+- faites de commits après chaque changement, c'est plus facile à tracer !
+
+Pour annuler des changements avant le 2., faire
+$ git checkout <fichier>
+et pour enlever un fichier de la liste des fichiers à commiter, faire
+$ git reset HEAD <fichier>
+
+
+
+Pour uploader son travail sur le serveur :
+1. utiliser 
+$ git rebase -i
+pour fusionner tout ou partie de vos commits
+2. lancer
+$ git push origin
