@@ -32,8 +32,16 @@ $ git reset HEAD <fichier>
 
 
 Pour uploader son travail sur le serveur :
-1. utiliser 
-$ git rebase -i
-pour fusionner tout ou partie de vos commits
+0. utiliser 
+$ git log
+pour récupérer le numéro de commit à partir duquel on va fusionner 
+des commits (prendre le numéro *suivant* le message de commit le
+plus ancien qui nous intéresse).
+1. utiliser
+$ git rebase -i <numéro trouvé en 0.>
+pour fusionner tout ou partie de vos commits. Essentiellement, on laisse pick
+pour le commit le plus vieux, et on met s (ou squash) pour les suivants. Si
+vous voulez garder plusieurs commits, laissez plusieurs pick.
+Ensuite, on vous demandera de nouveaux messages de commit.
 2. lancer
 $ git push origin
