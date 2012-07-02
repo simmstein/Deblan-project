@@ -1,0 +1,13 @@
+	Salut à tous,
+
+	Après avoir un peu réfléchi et lu attentivement toutes vos réponses, j'en suis arrivé à une idée très simple : pour que la FAQ soit vraiment un projet collaboratif du forum, il faut que tout le monde y participe. Pour que tout le monde y participe, il faut un support efficace. Ce support aurait pu prendre deux formes.
+	Soit git, mais que tout le forum travaille dessus aurait été compliqué : il faut que les gens s'initient à git, il faut se répartir la tâche efficacement, etc.
+	Arrive alors la deuxième solution, celle proposée par XKCD : le pad. Le pad est une interface web style Google Docs sur laquelle tout le monde pourra travailler. Cette interface est accessible à cette adresse : http://www.eleves.ens.fr/pads/p/faqlinux et est utilisable par tous à condition d'utiliser un navigateur adapté avec les plugins adaptés.
+
+	J'invite donc tous les membres à écrire ce qu'ils savent et/ou à corriger (en précisant les modifications faites) le contenu. Pour ce qui est du contenu qu'on ne pourra pas rédiger sur le pad (je pense à la suggestion de tutoriels vidéos), j'invite les membres qui seraient disponibles pour l'édition de ce genre de matériel à me contacter par mail, message privé ou sur ce topic.
+
+	Je me chargerai régulièrement de mettre en forme et de fixer le contenu à un certain moment et de le stocker ailleurs (sur github probablement) pour qu'on puisse estimer la progression et avoir quelque chose d'exploitable en attendant une flamboyante version définitive.
+
+	Veillez à rédiger un contenu exact et à utiliser le plus possible des liens « officiels » tels que les FAQ des différents systèmes d'exploitation et les pages de manuels.
+
+	A vos stylos ! N'hésitez pas à poser vos questions sur ce topic !
