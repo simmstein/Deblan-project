@@ -1,0 +1,48 @@
+1. Qu'est-ce que GNU/Linux ?
+ 
+1.1. Introduction :
+ 
+GNU/Linux est un système d'exploitation libre et open-source.
+Il se base sur la combinaison GNU + Linux : GNU est "l'ensemble de logiciels" qui va autour de Linux, et Linux est le noyau du système. Ainsi, GNU fournit les outils de base et une interface (en ligne de commande au départ) à Linux.
+ 
+GNU et Linux sont tous les deux basés sur les principes instaurés par UNIX, un système d'exploitation propriétaire, c'est pour cela que GNU/Linux possède des commandes similaires à UNIX et qu'il est considéré comme un OS "UNIX-like" ("comme UNIX", littéralement).
+ 
+Comme vous l'avez sûrement remarqué si vous avez déjà fait des recherches, il n'existe pas un système d'exploitation unique s'appelant "GNU/Linux" ni même "Linux", en effet, ce système d'exploitation existe à travers ce que l'on appelle des "distributions", ce sont en quelque sorte des "versions" de GNU/Linux, chacune ayant des spécificités propres.
+ 
+Vous avez probablement remarqué que le nom de l'OS est "GNU/Linux" et non juste "Linux" qui est une appellation commune mais erronée (Linux étant le nom du noyau uniquement).
+ 
+1.2. Pourquoi utiliser GNU/Linux ?
+ 
+Il existe de nombreuses raisons d'utiliser GNU/Linux, que ce soit seul ou à côté d'un autre OS comme Windows ou Mac OS. Ces raisons peuvent être simples comme "Mon Windows/PC est lent" ou "Je souhaite découvrir autre chose" ou encore "Un ami m'en a parlé", mais il existe aussi des raisons bien plus diversifiées que celles-ci. En effet, GNU/Linux, contrairement à Windows ou Mac OS est un système d'exploitation libre et open-source, ce qui est en soit une motivation pour certains qui refusent l'utilisation de logiciel propriétaire au profit du libre et/ou open-source.
+ 
+Bien entendu il existe de nombreux avantages à utiliser une distribution GNU/Linux, mais il existe aussi des inconvénients, cela dépend évidemment de l'utilisateur et de ses besoins.
+ 
+1.3. Devrais-je utiliser GNU/Linux ?
+ 
+Globalement : ça dépend de ce qui vous pousse à vous poser la question. Si la seule raison c'est "j'en ai marre de Windows" ou "un pote m'a montré des effets graphiques, j'ai trouvé ça cool", vous risquez d'avoir une mauvaise expérience.
+Ce qu'il faut avoir en tête, c'est que ce n'est pas la même chose que Windows ou que Mac OS, et donc que la transition ne peut pas se faire sans un peu de bonne volonté. Si vous voulez juste un système qui marche, restez sous celui que vous connaissez le mieux, c'est de loin le comportement le plus sage. Si vous êtes motivés pour passer du temps à apprivoiser un tout nouveau système, et que vous n'avez pas peur d'être déroutés par rapport à certains réflexes que vous avez, alors ça vaut le coup d'essayer.
+Si vous hésitez, le meilleur des moyens pour se décider est encore d'essayer GNU/Linux sans abandonner votre ancien système, en utilisant un Live CD ou en installant un dual boot sur votre ordinateur (voir les sections correspondantes).
+ 
+GNU/Linux (comparé aux OS comme Windows, Mac OS X ou iOS), a des avantages tels que:
+	- C'est un OS libre et open-source.
+	- C'est un OS très personnalisable et adaptable : vous pouvez choisir entre plusieurs gestionnaires de fenêtres et les personnaliser à votre goût.
+	- Il existe des interfaces graphiques pour GNU/Linux qui sont très légères, ce qui peut être utile pour donner une nouvelle jeunesse à un ordinateur vieillissant.
+	- Le développement de la plupart des distributions est communautaire, ce qui permet notamment un accès facile à une aide efficace en cas de problème.
+	- Le système de fichiers se fragmente peu contrairement à celui de Windows : vous pouvez oublier l'obligation de défragmenter votre système tous les mois.
+	- GNU/Linux est généralement considéré comme étant plus "sécurisé" que Windows, notamment grâce aux système de droits sur les fichiers (qui permet une gestion beaucoup plus intuitive des permissions de chaque utilisateur dans le cas d'une machine utilisée par plusieurs personnes), mais aussi à cause du fait qu'il y a beaucoup moins de malwares écrits pour infecter des systèmes sous Linux. Cela ne signifie évidemment pas qu'il n'y a aucun risque, gardez à l'esprit que la majorité des problèmes de sécurité rencontrés en utilisant un système proviennent de l'utilisation qu'on en fait et non pas de failles logicielles.
+	- Les programmes ne s'installent pas via un exécutable téléchargé sur internent mais via un gestionnaire de paquets, ce qui est considéré par beaucoup comme étant plus pratique et plus sécurisé.
+	- La plupart des distributions sont gratuites.
+Bien entendu il existe quelques inconvénients comme:
+	- Les logiciels Windows ne sont pas compatible avec GNU/Linux (ou tout autre OS que Windows d'ailleurs), ce qui amène à plusieurs cas de figure :
+		- Soit le-dit logiciel est multi-plateforme et une version GNU/Linux existe (ex: Firefox)
+		- Soit il n'existe pas sous GNU/Linux mais il existe un équivalent de celui-ci (ex: Windows Live Messenger)
+	- Il y a un certain temps d'adaptation pour les utilisateurs des OS commerciaux (OS X, Windows), qui peut rebuter. Il faut avoir un minimum de motivation pour apprendre à utiliser un nouveau système !
+ 
+Vous l'aurez donc compris, chaque OS a ses qualités et ses défauts, aucun n'est parfait, et le choix se fait en fonction de vos besoins, ni plus, ni moins.
+ 
+1.4. Il paraît que GNU/Linux c'est compliqué, c'est vrai ?
+ 
+C'est au choix !
+ 
+Contrairement à d'autres systèmes d'exploitation, il existe de nombreuses distributions GNU/Linux qui fonctionnent et sont maintenues en même temps, chacune d'elles ayant une idée directrice qui lui est propre. Ainsi certaines d'entre elles ont pour objectif l'ouverture et la facilité d'utilisation par des utilisateurs novices, leur sont plus intuitives, nécessitent peu ou pas de changement de configuration pour fonctionner pleinement avec le matériel donné, comme d'autres sont plutôt destinées à être utilisées dans un milieu professionnel ou expérimenté, pour un usage bien précis.
+Ainsi, selon votre système d'exploitation originel, votre matériel et l'usage que vous voulez en faire, vos connaissances préalables en informatique, certaines distributions vous sembleront plus facile d'accès que d'autres. Au fur et à mesure que vous utilisez la distribution que vous aurez choisie, votre expérience vous permettra sans doute de chercher plus loin, d'expérimenter de nouvelles pratiques qui vous étaient inconnues, de découvrir de nouvelles choses qui ne vous étaient jusqu'alors pas accessibles, et d'approcher plus encore du fonctionnement basique de votre ordinateur. C'est à partir de là que d'autres distributions vous sembleront plus adaptées que la vôtre, et ainsi de suite, jusqu'à ce que vous deveniez un utilisateur aguerri !
