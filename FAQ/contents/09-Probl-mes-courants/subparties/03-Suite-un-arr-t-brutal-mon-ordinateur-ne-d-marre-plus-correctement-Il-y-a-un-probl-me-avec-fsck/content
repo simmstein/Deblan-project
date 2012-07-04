@@ -1,8 +1,0 @@
-Suite Ã  un arrÃªt brutal, mon ordinateur ne dÃ©marre plus correctement. Il y a un problÃ¨me avec Â« fsck Â».
-
-Cela signifie qu'il y a une erreur sur l'une de vos partitions et
-qu'il est impossible de la monter. Une solution consiste consiste à
-noter le numéro de la partition à problème (par exemple "/dev/sda11")
-et de lancer la commande suivante à partir d'un liveCD :
-{{{# fsck -aC /dev/sda11}}}
-Cette commande va prendre un certain temps. Essayez ensuite de redémarrer votre machine, tout devrait marcher à nouveau.

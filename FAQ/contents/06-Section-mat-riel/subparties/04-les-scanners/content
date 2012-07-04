@@ -1,8 +1,0 @@
-les scanners
-
-Un certain nombre de scanner disposent d'un driver pour Linux. Consultez la liste suivante : [http://www.sane-project.org/sane-mfgs.html|http://www.sane-project.org/sane-mfgs.html].
-Si
-vous voyez indiqué "Basic", "Good" ou "Complete" pour votre scanner, il
-ne vous reste plus qu'à installer le paquet sane depuis votre
-gestionnaire de paquet favori.<br />
-	Sinon, demandez sur le forum (mais sachez qu'il y a peu d'espoir). 	

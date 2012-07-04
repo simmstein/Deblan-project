@@ -1,5 +1,0 @@
-Comment restaurer le bootloader de Windows XP ?
-
-Bootez sur un CD de Windows XP et choisissez de lancer la console de récupération. Tapez les deux lignes suivantes :
-{{{fixboot<br />fixmbr}}}
-Rebootez pour tester si cela a fonctionné.

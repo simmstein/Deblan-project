@@ -1,8 +1,0 @@
-Comment restaurer le bootloader de Windows Vista ?
-
-La manipulation est légèrement différente de celle des précédentes
-versions de Windows. Bootez sur un CD de Windows Vista et choisissez
-l'option Réparer. Lancez alors la console de récupération, et tapez-y :
-{{{Bootrec.exe /FixBoot<br />Bootrec.exe /FixMbr}}}
-Rebootez pour voir si ça a marché.
-Complément d'information : [http://support.microsoft.com/kb/927392|http://support.microsoft.com/kb/927392].

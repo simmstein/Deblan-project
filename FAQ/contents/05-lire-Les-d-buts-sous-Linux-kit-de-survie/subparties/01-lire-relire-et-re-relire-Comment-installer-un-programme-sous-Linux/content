@@ -1,9 +1,0 @@
-[Ã  lire, relire, et re-relire !] Comment installer un programme sous Linux ?
-
-Les différentes distributions Linux fournissent toutes un programme
-appelé le « gestionnaire de paquet ». Ce gestionnaire est l'équivalent
-du «installer/supprimer des programmes» du panneau de configuration de
-Windows, à ceci près que son rôle principal est d'installer des
-programmes, et pas juste d'en supprimer.
-Voici une vidéo illustrant le concept de « gestionnaire de paquet » : [http://bordel.deblan.fr/videos/Tutoriel_2_Installer_des_logiciels.mpeg|http://bordel.deblan.fr/videos/Tutoriel_2_Installer_des_logiciels.mpeg].
-<p style="font-size: 9px;">(merci à deepblue pour l'hébergement de cette vidéo)</p>
